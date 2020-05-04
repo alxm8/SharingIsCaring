@@ -61,8 +61,18 @@ Chocolately can be installed by running this command;
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'));
 ```
+Chocolately usefull apps 
+```
+
+choco install microsoft-windows-terminal
+choco install vscode
+choco install notepad++
+choco install microsoft-windows-terminal
+
+```
+
 ## Windows Terminal
-When chocolately is installed you can install Windows Terminal with the below;
+When chocolately if you have not already you can install Windows Terminal with the below;
 
 ```
 choco install microsoft-windows-terminal
