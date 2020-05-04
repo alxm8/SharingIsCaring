@@ -36,6 +36,24 @@ Scoop can be installed by running the below command;
 Set-ExecutionPolicy RemoteSigned -scope CurrentUser;iwr -useb get.scoop.sh | iex
 
 ```
+Usefull scoop utilities;
+```
+scoop bucket add extras
+scoop install sudo
+scoop install 7zip
+scoop install aria2
+scoop install concfg
+scoop install curl
+scoop install dark
+scoop install ffsend
+scoop install git
+scoop install http-downloader
+scoop install innounp
+scoop install openssh
+scoop install openssl
+scoop install ffsend
+scoop install speedtest-cli
+```
 ## Installing chocolately
 
 Chocolately can be installed by running this command;
