@@ -1,4 +1,4 @@
-# Dank Powershell 7 Setup
+# Dank Powershell 7 Setup v1
 
 This is the cheeky guide you need to follow for a badass Powershell 7 deployment on a new client.
 
