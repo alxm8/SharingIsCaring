@@ -25,7 +25,7 @@ Cop the below into a powershell window this will download powershell 7.
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
 Invoke-WebRequest -Uri 'https://github.com/PowerShell/PowerShell/releases/download/v7.0.0/PowerShell-7.0.0-win-x64.msi' -OutFile ($home +'\downloads\PowerShell-7.0.0-win-x64.msi');
-ii ($home +'\downloads\);
+ii ($home +'\downloads\');
 ```
 # Installing scoop
 
@@ -36,6 +36,7 @@ Set-ExecutionPolicy RemoteSigned -scope CurrentUser;iwr -useb get.scoop.sh | iex
 ```
 ## Usefull scoop utilities;
 ```
+scoop update *
 scoop bucket add extras
 scoop install sudo
 scoop install 7zip
@@ -61,8 +62,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 ```
 ## Chocolately usefull apps 
 ```
-
-choco install microsoft-windows-terminal
 choco install vscode
 choco install notepad++
 choco install microsoft-windows-terminal
