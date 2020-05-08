@@ -2,14 +2,6 @@
 #awesome modules https://www.reddit.com/r/PowerShell/comments/ekwwvb/powershell_modules_i_worked_on_in_2019/
 ##downloadfiles https://4sysops.com/archives/use-powershell-to-download-a-file-with-http-https-and-ftp/ 
 #scoop package manager https://github.com/lukesampson/scoop
-#scoop install 7zip
-#scoop install sudo
-#scoop install 7zip
-#scoop install dark
-#scoop install innounp
-#scoop install pshazz
-#scoop install speedtest-cli
-#scoop install aria2c
 #chocolatey #windows package manager https://chocolatey.org/install
 #set tls to 1.2 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 
