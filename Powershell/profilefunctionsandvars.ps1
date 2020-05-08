@@ -1,5 +1,5 @@
 #paste these functions into your $profile file
-
+#----Functions
 function Connect-VM {
 	param(
 		[Parameter(Mandatory=$true,Position=0,ValueFromPipeline=$true)]
@@ -102,7 +102,7 @@ function functions{
 	write-host "ggl (google it)" -ForegroundColor Blue
 	write-host "download -fileurl (download a file with aria2c)" -ForegroundColor Blue
 }
-
+#----Vars
 $profPublicIP = Get-PublicIP
 $profGitDIR = ($home + '\documents\git')
 $profCredStore = ($home + '\.credstore')
