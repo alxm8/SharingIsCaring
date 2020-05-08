@@ -1,8 +1,15 @@
+
+#---------------------------------------------------------------[Notes]------------------------------------------------------------
+#works with powershell 5.1 due to self signed certificate method not working in PS7
 #---------------------------------------------------------[Initialisations]--------------------------------------------------------
 # ZVM on Production side used to create VPGs
-$ZVMServer = read-host "please enter the resolvable DNS name or IP of the ZVM" #you can use local host if you run the script from the source ZVM.
+$ZVMServer = Read-Host "Please enter IP or DNS name of ZVM"
+$ZVMServer = ($ZVMServer + ":9669")
+
+$cred = Get-Credential
+
 # Get Credentials to connect to ZVM API
-$Credentials = Get-Credential -Message "Please enter Username and Password for ZVM $($ZVMServer)"
+$Credentials = $cred
 $username = $Credentials.UserName
 $password = $Credentials.GetNetworkCredential().Password
 
@@ -34,7 +41,6 @@ return true;
 }
 "@
 [System.Net.ServicePointManager]::CertificatePolicy = New-Object TrustAllCertsPolicy
-
 #-----------------------------------------------------------[Execution]------------------------------------------------------------
 #https://s3.amazonaws.com/zertodownload_docs/Latest/Zerto%20Virtual%20Replication%20RESTful%20APIs.pdf
 # Build Zerto REST API Url
@@ -44,10 +50,9 @@ $ZertoSession = getxZertoSession "$($ZertoRestURL)" $username $password
 
 #API calls
 
-
-$global:SiteInfo = Invoke-RestMethod -Method Get  -Uri ($ZertoRestURL+'localsite') -Headers $ZertoSession
 $global:VPGs = Invoke-RestMethod -Method Get  -Uri ($ZertoRestURL+'vpgs') -Headers $ZertoSession
 $global:ProtectedVMs = Invoke-RestMethod -Method Get  -Uri ($ZertoRestURL+'vms') -Headers $ZertoSession
+$global:SiteInfo = Invoke-RestMethod -Method Get  -Uri ($ZertoRestURL+'localsite') -Headers $ZertoSession
 $global:UnprotectedVMs = Invoke-RestMethod -Method Get  -Uri ($ZertoRestURL+'virtualizationsites/'+$SiteInfo.SiteIdentifier+'/vms') -Headers $ZertoSession
 
-Write-Host "check global:siteinfo, global:VPGs, global:ProtectedVMs and global:UnprotectedVMs variables for output" -ForegroundColor Yellow
+write-host "Please see the contents of global:VPGs, global:ProtectedVMs, global:SiteInfo, global:UnprotectedVMs" -ForegroundColor Yellow
