@@ -17,10 +17,6 @@ function Get-PublicIP
 {
     Invoke-RestMethod https://ipv4.ipleak.net/json -TimeoutSec 20
 }
-function Get-NordVPNServers
-{
-    Invoke-WebRequest -Uri https://nordvpn.com/api/server -UseBasicParsing -Method GET | ConvertFrom-Json;
-}
 function PWG {
     $Password = ([char[]]([char]33..[char]95) + ([char[]]([char]97..[char]126)) + 0..9 | sort {Get-Random})[0..15] -join ''
     write-host 'Generated Random Password....'
@@ -30,10 +26,6 @@ function Azure
 {
     	Connect-AzAccount
 	start-process "chrome.exe" "https://portal.azure.com",'--profile-directory="Default"'
-}
-function Home {
-$urls='http://alx-freenas1','http://alx-pfsense1','http://JALEX-R1'
-foreach($url in $urls){start-process -FilePath 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' -ArgumentList $url}
 }
 function Get-MACVendor ($mac)
 {
@@ -94,9 +86,19 @@ function download ($downloadURL)
         aria2c $downloadURL -d $downloadDir
         get
 }
-function functions
-{
-    
+function functions{
+
+	write-host "Connect-VM -VMName (Open Hyper-V VM Console Window to VMName)" -ForegroundColor Blue
+	write-host "Start-RDP -Hostname (RDP to IP or hostname)" -ForegroundColor Blue
+	write-host "Get-PublicIP (Get Public IP)" -ForegroundColor Blue
+	write-host "PWG (Password Generator)" -ForegroundColor Blue
+	write-host "Azure (Connect to Azure Account)" -ForegroundColor Blue
+	write-host "Get-MACVendor -MAC (Get the Vendor of a MAC address)"-ForegroundColor Blue
+	write-host "start-iPerfServer (Start an iPerf Server)"-ForegroundColor Blue
+	write-host "New-CredStoreCred (Create an encrypted key for credstore)"-ForegroundColor Blue
+	write-host "Get-HostNetworking (Get local host network configuration)"-ForegroundColor Blue
+	write-host "ggl (google it)" -ForegroundColor Blue
+	write-host "download -fileurl (download a file with aria2c)" -ForegroundColor Blue
 }
 
 $profPublicIP = Get-PublicIP
