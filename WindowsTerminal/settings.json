@@ -1,4 +1,35 @@
+// To view the default settings, hold "alt" while clicking on the "Settings" button.
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+// https://jeffbrown.tech/add-powershell-7-preview-profile-to-windows-terminal/
+// PS7 install location C:\Program Files\PowerShell\7
+// PS7 icon install location C:\Program Files\PowerShell\7\assets
+// Download PS7 with #choco install microsoft-windows-terminal
+// settings.json location C:\Users\user\AppData\Local\Packages\Microsoft.WindowsTerminal_8wekyb3d8bbwe\LocalState
 
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{e053cd08-b8cb-4f30-9cb4-fbe6a8416dfe}",
+
+    "profiles":
+    {
+        "defaults":
+        {
+            // Put settings here that you want to apply to all profiles
+        },
+        "list":
+        [
+            {
+                // Make changes here to the powershell.exe profile
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe",
+                "hidden": false,
+                "colorScheme":"Afterglow"
+                
+                
+            },
+            {
                 // Make changes here to the cmd.exe profile
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "name": "cmd",
