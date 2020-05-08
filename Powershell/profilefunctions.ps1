@@ -1,3 +1,5 @@
+#paste these functions into your $profile file
+
 function Connect-VM {
 	param(
 		[Parameter(Mandatory=$true,Position=0,ValueFromPipeline=$true)]
