@@ -87,6 +87,13 @@ It is possible that after a fresh install the PS7 profile is not created. You ca
 ii $profile;
 ```
 ## Windows $Profile Functions
-The below functions can be added to the $profile file for various sysadmin tasks.
+Functions can be added to your powershell profile file found in the $profile path. I have adedd some useful functions and linked the location of them in this gitub below.
+[Functions](https://github.com/alxm8/SharingIsCaring/blob/master/Powershell/Profile/profilefunctionsandvars.ps1)
+### Example
 ```
+function Start-RDP ($computername)
+{
+    Start-Process "$env:windir\system32\mstsc.exe" -ArgumentList "/v:$computername"
+}
+Start-RDP server.lan
 ```
