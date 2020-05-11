@@ -1,10 +1,10 @@
-# Dank Powershell 7 Setup v1
+# Powershell 7 Setup v1
 
-This is the cheeky guide you need to follow for a badass Powershell 7 deployment on a new client.
+This is a quick and dirty guide you can follow for a badass Powershell 7 deployment on a new client.
 
 # Getting Started
 
-This guide will get you started with the below:
+This guide will help you to get started with the below:
 
 * [Powershell 7 ](https://github.com/PowerShell/powershell/releases) #new shiny shell with usefull functions.
 * [scoop](https://scoop.sh/) #usefull commandline utilities
@@ -15,12 +15,12 @@ This guide will get you started with the below:
 
 # Prerequisites
 
-Internet Access & Local Administrator
+Internet Access & Local Administrator on the machine you wish to install PS7 on.
 
 # Installing Powershell 7
 
-First step is to download that new juicy powershell with ye olde powershell and run the installer.
-Cop the below into a powershell window this will download powershell 7.
+First step is to download that new juicy Powershell 7 with ye olde Powershell and run the installer.
+Copy the below into a Powershell window which will start the download of Powershell 7.
 
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
@@ -87,6 +87,13 @@ It is possible that after a fresh install the PS7 profile is not created. You ca
 ii $profile;
 ```
 ## Windows $Profile Functions
-The below functions can be added to the $profile file for various sysadmin tasks.
+Functions can be added to your powershell profile file found in the $profile path. I have added some useful functions and linked the location of them in this gitub below.
+[Functions](https://github.com/alxm8/SharingIsCaring/blob/master/Powershell/Profile/profilefunctionsandvars.ps1)
+### Example
 ```
+function Start-RDP ($computername)
+{
+    Start-Process "$env:windir\system32\mstsc.exe" -ArgumentList "/v:$computername"
+}
+Start-RDP server.lan
 ```
