@@ -19,8 +19,8 @@ Internet Access & Local Administrator on the machine you wish to install PS7 on.
 
 # Installing Powershell 7
 
-First step is to download that new juicy powershell with ye olde powershell and run the installer.
-Copy the below into a powershell window this will download powershell 7.
+First step is to download that new juicy Powershell 7 with ye olde Powershell and run the installer.
+Copy the below into a Powershell window which will start the download of Powershell 7.
 
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
