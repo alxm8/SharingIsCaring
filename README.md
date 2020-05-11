@@ -1,10 +1,10 @@
-# Dank Powershell 7 Setup v1
+# Powershell 7 Setup v1
 
-This is the cheeky guide you need to follow for a badass Powershell 7 deployment on a new client.
+This is a quick and dirty guide you can follow for a badass Powershell 7 deployment on a new client.
 
 # Getting Started
 
-This guide will get you started with the below:
+This guide will help you to get started with the below:
 
 * [Powershell 7 ](https://github.com/PowerShell/powershell/releases) #new shiny shell with usefull functions.
 * [scoop](https://scoop.sh/) #usefull commandline utilities
@@ -15,12 +15,12 @@ This guide will get you started with the below:
 
 # Prerequisites
 
-Internet Access & Local Administrator
+Internet Access & Local Administrator on the machine you wish to install PS7 on.
 
 # Installing Powershell 7
 
 First step is to download that new juicy powershell with ye olde powershell and run the installer.
-Cop the below into a powershell window this will download powershell 7.
+Copy the below into a powershell window this will download powershell 7.
 
 ```
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
