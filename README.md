@@ -87,7 +87,7 @@ It is possible that after a fresh install the PS7 profile is not created. You ca
 ii $profile;
 ```
 ## Windows $Profile Functions
-Functions can be added to your powershell profile file found in the $profile path. I have adedd some useful functions and linked the location of them in this gitub below.
+Functions can be added to your powershell profile file found in the $profile path. I have added some useful functions and linked the location of them in this gitub below.
 [Functions](https://github.com/alxm8/SharingIsCaring/blob/master/Powershell/Profile/profilefunctionsandvars.ps1)
 ### Example
 ```
