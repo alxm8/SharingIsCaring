@@ -1,3 +1,4 @@
+#credit to https://gallery.technet.microsoft.com/scriptcenter/List-the-IP-addresses-in-a-60c5bb6b
 function Get-IPrange
 {
 <# 
