@@ -52,6 +52,9 @@ scoop install openssh
 scoop install openssl
 scoop install ffsend
 scoop install speedtest-cli
+scoop install hosts-file-editor
+scoop install treesize-free
+
 ```
 # Installing chocolately
 
