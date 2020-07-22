@@ -11,6 +11,7 @@ This guide will help you to get started with the below:
 * [chocolately](https://chocolatey.org/) #windows package manager for easy installation of software
 * [Windows Terminal](https://github.com/microsoft/terminal) # Windows new shell installation and customisation
 * Windows $Profile and Functions
+* PSRemoting with SSH
 
 
 # Prerequisites
@@ -100,3 +101,7 @@ function Start-RDP ($computername)
 }
 Start-RDP server.lan
 ```
+
+# PSRemoting with SSH
+See https://www.thomasmaurer.ch/2020/04/enable-powershell-ssh-remoting-in-powershell-7/
+
