@@ -150,6 +150,22 @@ function functions{
 	write-host "ggl (google it)" -ForegroundColor Blue
 	write-host "download -fileurl (download a file with aria2c)" -ForegroundColor Blue
 }
+#quickMath
+#Percentages
+function Output-XPercentageOfY {
+    param( [int]$X, [int]$Y )
+    ($X * $Y) / 100 
+}
+function Output-WhatPercentofXisY {
+    param( [int]$X, [int]$Y )
+    ($Y / $X)
+}
+function Output-XifPpercentOfItIsY {
+    param( [float]$P, [float]$Y)
+    $p = $p / 100
+    $x = $Y /$P
+    $x
+}
 #----Vars
 $profPublicIP = Get-PublicIP
 $profGitDIR = ($home + '\documents\git')
