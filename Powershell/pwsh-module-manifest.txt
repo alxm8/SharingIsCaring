@@ -1,8 +1,10 @@
-https://www.powershellgallery.com/packages/7Zip4Powershell/1.13.0 #7zip pwsh
-https://www.powershellgallery.com/packages/localaccount/1.6 #local account management
-https://www.powershellgallery.com/packages/PSWriteHTML/0.0.122 #writehtml
-https://www.powershellgallery.com/packages/VMware.PowerCLI/12.1.0.17009493 #powercli
-https://www.powershellgallery.com/packages/WinSCP/5.17.8.1 #WIN secure copy module
-https://www.powershellgallery.com/packages/CredentialManager/2.0 #credential manager
-https://www.powershellgallery.com/packages/ImportExcel/7.1.1 #import excel
+https://www.powershellgallery.com/packages/7Zip4Powershell #7zip pwsh
+https://www.powershellgallery.com/packages/localaccount #local account management
+https://www.powershellgallery.com/packages/PSWriteHTML #writehtml
+https://www.powershellgallery.com/packages/VMware.PowerCLI #powercli
+https://www.powershellgallery.com/packages/WinSCP #WIN secure copy module
+https://www.powershellgallery.com/packages/CredentialManager #credential manager
+https://www.powershellgallery.com/packages/ImportExcel #import excel
 https://www.powershellgallery.com/packages/Veeam.PowerCLI-Interactions/0.4.2 #VEEAM powercli integration
+https://www.powershellgallery.com/packages/PSScriptAnalyzer/ #checks code for errors
+https://www.powershellgallery.com/packages/ConvertFromMarkdown/ #for converting md files
