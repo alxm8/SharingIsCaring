@@ -8,3 +8,4 @@ https://www.powershellgallery.com/packages/ImportExcel #import excel
 https://www.powershellgallery.com/packages/Veeam.PowerCLI-Interactions/0.4.2 #VEEAM powercli integration
 https://www.powershellgallery.com/packages/PSScriptAnalyzer/ #checks code for errors
 https://www.powershellgallery.com/packages/ConvertFromMarkdown/ #for converting md files
+https://github.com/markkerry/MSIPatches #finding obselete windows updates
