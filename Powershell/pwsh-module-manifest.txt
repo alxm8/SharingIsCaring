@@ -2,6 +2,7 @@ list of usefull powershell modules.
 
 https://www.powershellgallery.com/packages/VMware.PowerCLI #powercli
 https://www.powershellgallery.com/packages/CredentialManager #credential manager
+https://github.com/solarwinds/OrionSDK #Solarwinds SDK
 https://www.powershellgallery.com/packages/7Zip4Powershell #7zip pwsh
 https://www.powershellgallery.com/packages/localaccount #local account management
 https://www.powershellgallery.com/packages/PSWriteHTML #writehtml
