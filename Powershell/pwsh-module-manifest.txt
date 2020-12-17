@@ -1,9 +1,11 @@
+list of usefull powershell modules.
+
+https://www.powershellgallery.com/packages/VMware.PowerCLI #powercli
+https://www.powershellgallery.com/packages/CredentialManager #credential manager
 https://www.powershellgallery.com/packages/7Zip4Powershell #7zip pwsh
 https://www.powershellgallery.com/packages/localaccount #local account management
 https://www.powershellgallery.com/packages/PSWriteHTML #writehtml
-https://www.powershellgallery.com/packages/VMware.PowerCLI #powercli
-https://www.powershellgallery.com/packages/WinSCP #WIN secure copy module
-https://www.powershellgallery.com/packages/CredentialManager #credential manager
+https://www.powershellgallerycom/packages/WinSCP #WIN secure copy module
 https://www.powershellgallery.com/packages/ImportExcel #import excel
 https://www.powershellgallery.com/packages/Veeam.PowerCLI-Interactions/0.4.2 #VEEAM powercli integration
 https://www.powershellgallery.com/packages/PSScriptAnalyzer/ #checks code for errors
